@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+
+
 const BoxEach = styled.div`
   width: 200px;
   height: 100px;
@@ -12,6 +14,7 @@ const BoxEach = styled.div`
   justify-content: center;
 `;
 
+
 const BoxText = styled.p`
   font-size: 30px;
   font-weight: 500;
@@ -21,7 +24,7 @@ const Box = (props) => {
   return (
     <>
       <BoxEach boxColor={props.boxColor}>
-        <BoxText></BoxText>
+        <BoxText>{props.text}</BoxText>
       </BoxEach>
     </>
   );
